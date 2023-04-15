@@ -1,28 +1,59 @@
- 
-.Quadro{
-    height: 135px;
-    width: 135px;
-    border: 8px  rgb(110, 109, 109);
-    margin: 15px;
-    border-radius: 15px;
-    box-sizing: border-box;
-    box-shadow: 5px 10px 13px 2.8px rgba(99, 99, 99, 0.25);
-
-}
+@media screen and (min-width: 350px) and (max-width: 902px) {
 .quadro{
-    text-align: center;
+   flex-direction: column;
+   left: 10%;
+   top: 13%;
+}
+.Quadro{
+    height: 111px;
+    width: 124px;
+}
+.sub1{
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    top: 200px;
-    box-sizing: border-box;
     
 }
-
-.main{
+.insid1{
     display: flex;
-   
-    justify-content: center;
     position: relative;
+    left: 58%;
+    top: 150px;
+    z-index: 1;
+}
+.sub2{
+    position: absolute;
+}
+.insid2{
+    display: flex;
+    position: relative;
+    left:60%;
+    top: 276px;
+
+}
+.sub3{
+position: absolute;
+}
+.insid3{
+    display: flex;
+    position: relative;
+    left:90%;
+    top:422px;
     
-} 
+}
+.quest_top{
+    font-size: 2rem;
+    position: relative;
+    left: 20%;
+    top: 20px;
+    
+}
+.sub4{
+    position: absolute;
+}
+.insid4{
+    position: absolute;
+    left: 20px;
+    top: 565px;
+    
+
+}
+}
