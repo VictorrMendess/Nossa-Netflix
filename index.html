@@ -25,22 +25,16 @@
                 <form>
                     
                     <div class="input_box">
-                      <input required type="email" placeholder="Email ou numero de telefone">
+                        <input id="email" placeholder="Email ou numero de telefone">
                     </div>
-
+                    
                     <div class="input_box">
-                        <input required type="password" placeholder="Senha">
+                        <input id="password" required type="password" placeholder="Senha">
                     </div>
-
+                    
                     <div>
-                        <button class="submit">
-                           
-                            <a href="perfis.html" button style="color:#94494d ;">
-                            
-                              Entrar
-                            
-                            </a>
-                              </button>
+                        <button onclick="verificarAcesso()" class="submit">
+                                Entrar
                         </button>
                     </div>
             </form>
@@ -77,6 +71,22 @@
 
         </div>
     </div>
+
+    <script> 
+
+function verificarAcesso() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            
+            
+            if (email === 'palominha'||'victor' && password === 'gostosa'|| 'gostoso') {
+                window.open('perfis.html');
+            } else {
+                // Acesso negado
+                alert('Acesso negado! Troxaaaa.');
+            }
+        }
+    </script>
 
 
 

@@ -28,7 +28,7 @@
 <body>
     <div class="nav" id="nav">
         <img class="nav_logo"src="imagens/logo_.png" alt="">
-        <button class="src">
+        <button class="src" id="src">
             <span class="material-symbols-outlined">
                 search
                 </span>
@@ -132,7 +132,8 @@
             if(window.scrollY>=100){
                 nav.classList.add('nav__black')
             }else {
-                nav.classList.remove('nav__black')
+                nav.classList.remove('nav__black','src')
+               
             }
         })
         
