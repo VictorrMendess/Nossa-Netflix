@@ -8,8 +8,7 @@
     <link rel="icon" type="image/favicon" href="./imagens/logo_top.png">
     
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="media.css"
-/>
+    <link rel="stylesheet" type="text/css" href="media.css"/>
   
 </head>
 <body>
@@ -58,7 +57,7 @@
                 </div>
 
                 <div class="sigin_up">
-                    <p>Novo por aqui? <a href="#">Assine agora.</a></p>
+                    <p>Novo por aqui? <a href="cadastro.html">Assine agora.</a></p>
                     
                 </div>
 
@@ -79,12 +78,15 @@ function verificarAcesso() {
             var password = document.getElementById('password').value;
             
             
-            if (email === 'palominha'||'victor' && password === 'gostosa'|| 'gostoso') {
+            if (email === 'palominha' && password === 'gostosa') {
                 window.open('perfis.html');
+            } if (email === 'victor' && password === 'gostosa') {
+                window.open('tela_inicial.html');
             } else {
                 // Acesso negado
                 alert('Acesso negado! Troxaaaa.');
             }
+            
         }
     </script>
 
